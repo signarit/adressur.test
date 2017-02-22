@@ -83,7 +83,7 @@ Endaknútar viðvíkjandi postnummurum
 | Ávíst postnummar við vegum | GET | /postnummar/**_id_**/vegir
 | Ávíst postnummar við bústøðum | GET | /postnummar/**_id_**/bustadir
 
-Dømi: ```http://intranet.app:3000/postnummar/796/vegir```. Úrslit:
+Dømi: ```http://localhost:3000/postnummar/796/vegir```. Úrslit:
 ```
 [
   {
@@ -136,7 +136,7 @@ Endaknútar viðvíkjandi bygdum
 | Ávís bygd við vegum | GET | /bygd/**_id_**/vegir
 | Ávís bygd við bústøðum | GET | /bygd/**_id_**/bustadir
 
-Dømi: ```http://intranet.app:3000/bygd/96```. Úrslit:
+Dømi: ```http://localhost:3000/bygd/96```. Úrslit:
 ```
 [
   {
@@ -157,7 +157,7 @@ Endaknútar viðvíkjandi vegum
 | Ávísur vegur | GET | /vegur/**_id_**
 | Ávísur vegur við bústøðum | GET | /vegur/**_id_**/bustadir
 
-Dømi: ```http://intranet.app:3000/vegur/2```. Úrslit:
+Dømi: ```http://localhost:3000/vegur/2```. Úrslit:
 ```
 [
   {
