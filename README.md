@@ -2,13 +2,13 @@
 At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og bústadir í Føroyum í JSON
 
 #Innihaldsyvirlit
-1. [Uppsetan](https://github.com/signarit/adressur/blob/master/README.md#uppsetan)
-2. [Endaknútar](https://github.com/signarit/adressur/blob/master/README.md#endaknútar-endpoints)
-  1. [Umsiting](https://github.com/signarit/adressur/blob/master/README.md#umsiting)
-  2. [Kommunur](https://github.com/signarit/adressur/blob/master/README.md#kommunur)
-  3. [Postnummur](https://github.com/signarit/adressur/blob/master/README.md#postnummur)
-  4. [Vegir](https://github.com/signarit/adressur/blob/master/README.md#vegir)
-3. [Veikleikar og betringar](https://github.com/signarit/adressur/blob/master/README.md#veikleikar-og-betringar)
+1. [Uppsetan](https://github.com/signarit/adressur#uppsetan)
+2. [Endaknútar](https://github.com/signarit/adressur#endaknútar-endpoints)
+  1. [Umsiting](https://github.com/signarit/adressur#umsiting)
+  2. [Kommunur](https://github.com/signarit/adressur#kommunur)
+  3. [Postnummur](https://github.com/signarit/adressur#postnummur)
+  4. [Vegir](https://github.com/signarit/adressur#vegir)
+3. [Veikleikar og betringar](https://github.com/signarit/adressur#veikleikar-og-betringar)
 
 ##Uppsetan
 * Byrja við at gera tær ein MySQL-databasa. Eg havi brúkt navnið *addresses*, men tú kanst velja, hvussu databasin skal eita. Minst bara til at skriva rætta databasunavnið, tá tú bindur í databasuservaran. Eitt SQL-script til uppsetan av tabellunum er í rótini og fílurin eitur [sql.sql](https://github.com/signarit/adressur/blob/master/sql.sql)
