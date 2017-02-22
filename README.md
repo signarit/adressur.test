@@ -3,7 +3,7 @@ At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og
 
 #Innihaldsyvirlit
 1. [Uppsetan](https://github.com/signarit/adressur/blob/master/README.md#uppsetan)
-2. [Endaknútar](https://github.com/signarit/adressur/blob/master/README.md#endaknútar)
+2. [Endaknútar](https://github.com/signarit/adressur/blob/master/README.md#endaknútar-endpoints)
   1. [Umsiting](https://github.com/signarit/adressur/blob/master/README.md#umsiting)
   2. [Kommunur](https://github.com/signarit/adressur/blob/master/README.md#kommunur)
   3. [Postnummur](https://github.com/signarit/adressur/blob/master/README.md#postnummur)
