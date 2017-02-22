@@ -23,7 +23,9 @@ var mysql = mysql.createConnection({
 	charset: 'utf8mb4'
 });
 ```
-* Koyr ```npm install``` fyri at installera allar dependencies
+* Tryggja tær, at tú ert í røttu mappuni og skriva ```npm install``` fyri at installera allar dependencies
+
+* Tryggja tær, at tú ert í røttu mappuni og skriva ```node server.js``` fyri at tendra servaran
 
 * Far inn á [http://localhost:3000/admin](http://localhost:3000/admin) og uploada fílarnar, ið liggja í [public/upload](https://github.com/signarit/adressur/tree/master/public/upload). Fílarnir eru hesir:
 
