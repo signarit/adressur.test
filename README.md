@@ -30,56 +30,30 @@ Tá fílarnir verða uploadaðir, fáa teir nýtt navn, sum hevur formin YYYY_MM
 Nú kanst tú t.d. vitja [http://localhost:3000/kommunur](http://localhost:3000/kommunur)
 
 ##Endaknútar (endpoints)
-###Admin
-http://localhost:3000/admin
 
-###Kommunur
-####Allar kommunur
-http://localhost:3000/kommunur
-####Ávís kommuna
-http://localhost:3000/kommuna/*id*
-####Ávís kommuna við bygdum
-http://localhost:3000/kommuna/*id*/bygdir
-####Ávís kommuna við vegnum
-http://localhost:3000/kommuna/*id*/vegir
-####Ávís kommuna við bústøðum
-http://localhost:3000/kommuna/*id*/bustadir
-
-###Postnummur
-####Øll postnummur
-http://localhost:3000/postnummur
-####Øll postnummur við kommunum
-http://localhost:3000/postnummur/kommunur
-####Ávíst postnummar
-http://localhost:3000/postnummar/*id*
-####Ávíst postnummar við kommunu
-http://localhost:3000/postnummar/*id*/kommuna
-####Ávíst postnummar við vegum
-http://localhost:3000/postnummar/*id*/vegir
-####Ávíst postnummar við bústøðum
-http://localhost:3000/postnummar/*id*/bustadir
-
-
-###Bygdir
-####Allar bygdir
-http://localhost:3000/bygdir
-####Allar bygdir við kommunum
-http://localhost:3000/bygdir/kommunur
-####Ávís bygd
-http://localhost:3000/bygd/*id*
-####Ávís bygd við vegum
-http://localhost:3000/bygd/*id*/vegir
-####Ávís bygd við bústøðum
-http://localhost:3000/bygd/*id*/bustadir
-
-
-###Vegir
-####Allir vegir
-http://localhost:3000/vegir
-####Ávísur vegur
-http://localhost:3000/vegur/*id*
-####Ávísur vegur við bústøðum
-http://localhost:3000/vegur/*id*/bustadir
+| Lýsing | Háttur | Endaknútur
+---|---|---
+| Umsiting av síðuni | GET | /admin
+| Uploading av fílum | POST | /upload
+| Allar kommunur | GET | /kommunur
+| Ávís kommuna | GET | /kommuna/**_id_**
+| Ávís kommuna við bygdum | GET | /kommuna/**_id_**/bygdir
+| Ávís kommuna við vegnum | GET | /kommuna/**_id_**/vegir
+| Ávís kommuna við bústøðum | GET | /kommuna/**_id_**/bustadir
+| Øll postnummur | GET | /postnummur
+| Øll postnummur við kommunum | GET | /postnummur/kommunur
+| Ávíst postnummar | GET | /postnummar/**_id_**
+| Ávíst postnummar við kommunu | GET | /postnummar/**_id_**/kommuna
+| Ávíst postnummar við vegum | GET | /postnummar/**_id_**/vegir
+| Ávíst postnummar við bústøðum | GET | /postnummar/**_id_**/bustadir
+| Allar bygdir | GET | /bygdir
+| Allar bygdir við kommunum | GET | /bygdir/kommunur
+| Ávís bygd | GET | /bygd/**_id_**
+| Ávís bygd við vegum | GET | /bygd/**_id_**/vegir
+| Ávís bygd við bústøðum | GET | /bygd/**_id_**/bustadir
+| Allir vegir | GET | /vegir
+| Ávísur vegur | GET | /vegur/**_id_**
+| Ávísur vegur við bústøðum | GET | /vegur/**_id_**/bustadir
 
 ##Veikleikar og betringar
 Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
@@ -100,6 +74,6 @@ Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 
 8. Manglandi testing. Skipanin er ikki testað út í æsir.
 
-9. Betri readme. Yvirlitið yvir endaknútarnar er ikki nóg greitt.
+9. ~~Betri readme. Yvirlitið yvir endaknútarnar er ikki nóg greitt.~~
 
 Óivað er annað, ið eisini kann gerast betur.
