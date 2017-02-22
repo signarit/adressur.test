@@ -1,7 +1,7 @@
 # Endamál
 At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og bústadir í Føroyum í JSON
 
-##Byrja her
+##Uppsetan
 * Byrja við at gera tær ein databasa. Eg havi brúkt navnið *addresses*, men tú kanst velja, hvussu databasin skal eita. Minst bara til at broyta databasunavnið, tá tú bindur í databasuservaran. Uppsetanin til tabellurnar er í rótini og fílurin eitur [sql.sql](https://github.com/signarit/adressur/blob/master/sql.sql)
 
 * Rætta linjurnar \#63-67 og áset adressuna til databasuservaran, brúkaranavn, loyniorð og navn á databasu, sum tú júst hevur stovnað 
