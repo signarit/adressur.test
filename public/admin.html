@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Umsiting av bústaðarskrá</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<form method="post" action="/upload" enctype="multipart/form-data">
+				<label class="label">Bústaðir</label>
+				<p class="control">
+					<input type="file" name="addresses" id="input_addresses" class="input">
+				</p>
+
+				<label class="label">Kommunur</label>
+				<p class="control">
+					<input type="file" name="municipalities" id="input_municipalities" class="input">
+				</p>
+
+
+				<label class="label">Vegir</label>
+				<p class="control">
+					<input type="file" name="roads" id="input_roads" class="input">
+				</p>
+
+
+				<label class="label">Eindir</label>
+				<p class="control">
+					<input type="file" name="units" id="input_units" class="input">
+				</p>
+
+
+				<label class="label">Postnummur</label>
+				<p class="control">
+					<input type="file" name="zip_codes" id="input_zip_codes" class="input">
+				</p>
+
+				<button type="submit" class="button is-primary">Legg út</button>
+			</form>
+		</div>
+	</body>
+</html>
