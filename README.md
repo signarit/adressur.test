@@ -7,9 +7,9 @@ At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og
 * Rætta linjurnar \#63-67 og áset adressuna til databasuservaran, brúkaranavn, loyniorð og navn á databasu, sum tú júst hevur stovnað 
 ```
 var mysql = mysql.createConnection({
-	host: 'intranet.app',
-	user: 'homestead',
-	password: 'secret',
+	host: 'localhost',
+	user: 'username',
+	password: 'password',
 	database: 'addresses',
 	charset: 'utf8mb4'
 });
