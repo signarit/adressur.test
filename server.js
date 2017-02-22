@@ -60,9 +60,9 @@ var accept_files = upload.fields([
  *
  ********************************/
 var mysql = mysql.createConnection({
-	host: 'intranet.app',
-	user: 'homestead',
-	password: 'secret',
+	host: 'localhost',
+	user: 'username',
+	password: 'password',
 	database: 'addresses',
 	charset: 'utf8mb4'
 });
