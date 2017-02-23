@@ -183,6 +183,8 @@ Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 
 * Gera hagtøl, tá fyrispurningar verða sendir skipanini *
 
+* Brongla samskiftið umvegis TLS *
+
 * ~~Betri readme. Yvirlitið yvir endaknútarnar er ikki nóg greitt.~~ [22-02-2017]
 
 * ~~Gera npm script til seeding. ~~ [23-02-2017]
