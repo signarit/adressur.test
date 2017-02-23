@@ -181,6 +181,14 @@ Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 
 * Cacha úrslit, tá fílar verða innlisnir - ella tá lisið verður úr databasa.
 
+* Gera hagtøl, tá fyrispurningar verða sendir skipanini *
+
 * ~~Betri readme. Yvirlitið yvir endaknútarnar er ikki nóg greitt.~~ [22-02-2017]
+
+* ~~Gera npm script til seeding. ~~ [23-02-2017]
+
+* ~~Gera npm script til migrering. ~~ [23-02-2017]
+
+* ~~Flyta uppsetan í ein config-fíl. ~~ [23-02-2017]
 
 Óivað er annað, ið eisini kann gerast betur.
