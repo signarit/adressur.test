@@ -13,11 +13,13 @@ At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og
 ##Uppsetan
 * Hav ein MySQL-servara tilreiðar.
 
+* Umdoyp ```config.js.example``` til ```config.js```
+
 * Rætta linjurnar í [config.js](https://github.com/signarit/adressur/blob/master/config.js).
 
-* Skriva ```npm run migrate``` fyri at stovna databasa og neyðugar tabellur. Databasin fær navnið _addresses_.
+* Skriva ```npm run migrate``` fyri at stovna databasa og neyðugar tabellur. Databasin fær navnið *addresses*.
 
-* Skriva ```npm run seed``` fyri at stovna postnummur, kommunur, vegir og bústaðir í databasanum.
+* Skriva ```npm run seed``` fyri at stovna postnummur, kommunur, vegir og bústaðir í nýstovnaða databasanum.
 
 * Skriva ```node server``` fyri at tendra servaran.
 
