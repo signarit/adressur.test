@@ -159,9 +159,6 @@ Dømi: ```http://localhost:3000/vegur/2```. Úrslit:
 
 ##Veikleikar og betringar
 Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
-* Flyta funktionalitet í modulir. Server.js kann lættliga gerast ógreitt og torført at viðlíkahalda.
-
-* Flyta routes í modulir. Routes verður lættari at umsita, um hesar verða løgd í modulir.
 
 * UTF8-trupulleikar. Eri ikki vísur í, hvar trupulleikin liggur. Mítt besta boð er lesingin av fílunum.
 
@@ -183,8 +180,6 @@ Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 
 * Cacha úrslit, tá fílar verða innlisnir - ella tá lisið verður úr databasa.
 
-* Gera hagtøl, tá fyrispurningar verða sendir skipanini.
-
 * Brongla samskiftið við TLS.
 
 * ~~Betri readme. Yvirlitið yvir endaknútarnar er ikki nóg greitt.~~ [22-02-2017]
@@ -194,5 +189,11 @@ Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 * ~~Gera npm script til migrering.~~ [23-02-2017]
 
 * ~~Flyta uppsetan í ein config-fíl.~~ [23-02-2017]
+
+* ~~Flyta funktionalitet í modulir. Server.js kann lættliga gerast ógreitt og torført at viðlíkahalda.~~ [23-02-2017]
+
+* ~~Flyta routes í modulir. Routes verður lættari at umsita, um hesar verða løgd í modulir.~~ [23-02-2017]
+
+* ~~Gera hagtøl, tá fyrispurningar verða sendir skipanini.~~ [23-02-2017]
 
 Óivað er annað, ið eisini kann gerast betur.
