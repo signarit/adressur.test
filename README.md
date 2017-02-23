@@ -4,10 +4,10 @@ At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og
 #Innihaldsyvirlit
 1. [Uppsetan](https://github.com/signarit/adressur#uppsetan)
 2. [Endaknútar](https://github.com/signarit/adressur#endaknútar-endpoints)
-  1. [Umsiting](https://github.com/signarit/adressur#umsiting)
-  2. [Kommunur](https://github.com/signarit/adressur#kommunur)
-  3. [Postnummur](https://github.com/signarit/adressur#postnummur)
-  4. [Vegir](https://github.com/signarit/adressur#vegir)
+  * [Umsiting](https://github.com/signarit/adressur#umsiting)
+  * [Kommunur](https://github.com/signarit/adressur#kommunur)
+  * [Postnummur](https://github.com/signarit/adressur#postnummur)
+  * [Vegir](https://github.com/signarit/adressur#vegir)
 3. [Veikleikar og betringar](https://github.com/signarit/adressur#veikleikar-og-betringar)
 
 ##Uppsetan
@@ -193,6 +193,10 @@ Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 * Leggja routes afturat, sum møguliga mangla. til dømis /vegur/id/kommuna ella vegur/id/bygd fyri at fáa kommununa og bygdina, ið vegurin hoyrir til.
 
 * Hóskandi feilboð, tá feilir henda. Sum til dømis, tá onki samband fæst við databasan.
+
+* Avmarka SELECT-setningar.
+
+* Cacha úrslit, tá fílar verða innlisnir - ella tá lisið verður úr databasa.
 
 * ~~Betri readme. Yvirlitið yvir endaknútarnar er ikki nóg greitt.~~ [22-02-2017]
 
