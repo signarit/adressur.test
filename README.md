@@ -13,7 +13,9 @@ At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og
 ##Uppsetan
 * Hav ein MySQL-servara tilreiðar.
 
-* Umdoyp ```config.js.example``` til ```config.js```
+* Byrja við at skriva ```npm install``` fyri at installera allar dependencies.
+
+* Umdoyp síðani ```config.js.example``` til ```config.js```
 
 * Rætta linjurnar í [config.js](https://github.com/signarit/adressur/blob/master/config.js).
 
