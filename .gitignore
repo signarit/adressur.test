@@ -1,2 +1,7 @@
 node_modules/
+public/upload/
+!public/upload/adr.txt
+!public/upload/veg.txt
+!public/upload/postnr.txt
+!public/upload/kommunur.txt
 config.js

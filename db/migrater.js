@@ -133,6 +133,28 @@ var migrate_addresses = new Promise(function(resolve, reject) {
 	)
 });
 
+/********************************
+ *
+ * Migrate table for statistics
+ *
+ ********************************/
+var migrate_statistics = new Promise(function(resolve, reject) {
+	mysql.query(
+		'CREATE TABLE IF NOT EXISTS statistics ( '+
+		'	id INT NOT NULL AUTO_INCREMENT, '+
+		'	path VARCHAR(255) NOT NULL, '+
+		'	ip VARCHAR(255) NOT NULL, '+
+		'	created_at DATETIME DEFAULT CURRENT_TIMESTAMP, '+
+		'	PRIMARY KEY(id) '+
+		'); ', 
+		function(err, results, fields) {
+			if (err) reject(err.message);
+
+			resolve('Statistics migrated');
+		}
+	)
+});
+
 
 // We first create the database
 create_database.then(function(response) {
@@ -147,7 +169,8 @@ create_database.then(function(response) {
 			migrate_zip_codes,
 			migrate_municipalities,
 			migrate_addresses,
-			migrate_roads
+			migrate_roads,
+			migrate_statistics
 		]).then(function(response) {
 			console.log(response);
 
