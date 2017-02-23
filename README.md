@@ -183,7 +183,7 @@ Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 
 * Gera hagtøl, tá fyrispurningar verða sendir skipanini *
 
-* Brongla samskiftið umvegis TLS *
+* Brongla samskiftið við TLS *
 
 * ~~Betri readme. Yvirlitið yvir endaknútarnar er ikki nóg greitt.~~ [22-02-2017]
 
