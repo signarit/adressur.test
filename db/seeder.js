@@ -25,7 +25,7 @@ var path_to_roads = base_path + 'veg.txt';
 // Create a file reader from a path
 function read_file(path_to_file) {
 	return line_reader = readline.createInterface({
-		input: fs.createReadStream(path_to_file, 'utf8'),
+		input: fs.createReadStream(path_to_file, 'latin1'),
 	});
 }
 

@@ -79,7 +79,7 @@ module.exports = function(app, mysql) {
 
 			if (fieldname == 'zip_codes') {
 				var line_reader = readline.createInterface({
-					input: fs.createReadStream(path, 'utf8'),
+					input: fs.createReadStream(path, 'latin1'),
 				});
 
 				var i = 0;
@@ -117,7 +117,7 @@ module.exports = function(app, mysql) {
 			if (fieldname == 'municipalities') {
 				var line_reader = readline.createInterface({
 					input: fs.createReadStream(path, {
-						encoding: 'utf8'
+						encoding: 'latin1'
 					}),
 				});
 
@@ -150,7 +150,7 @@ module.exports = function(app, mysql) {
 
 			if (fieldname == 'roads') {
 				var line_reader = readline.createInterface({
-					input: fs.createReadStream(path, 'utf8'),
+					input: fs.createReadStream(path, 'latin1'),
 				});
 
 				var i = 0;
@@ -193,7 +193,7 @@ module.exports = function(app, mysql) {
 
 			if (fieldname == 'addresses') {
 				var line_reader = readline.createInterface({
-					input: fs.createReadStream(path, 'utf8'),
+					input: fs.createReadStream(path, 'latin1'),
 				});
 
 				var i = 0;

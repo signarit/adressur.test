@@ -160,8 +160,6 @@ Dømi: ```http://localhost:3000/vegur/2```. Úrslit:
 ##Veikleikar og betringar
 Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 
-* UTF8-trupulleikar. Eri ikki vísur í, hvar trupulleikin liggur. Mítt besta boð er lesingin av fílunum.
-
 * Betra um umsitingarliga partin við til dømis login. Øll hava rættindi at uploada fílar.
 
 * Innihaldið á fílunum verður ikki kannað. Kann geva feilir, um innihaldið broytist.
@@ -195,5 +193,7 @@ Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 * ~~Flyta routes í modulir. Routes verður lættari at umsita, um hesar verða løgd í modulir.~~ [23-02-2017]
 
 * ~~Gera hagtøl, tá fyrispurningar verða sendir skipanini.~~ [23-02-2017]
+
+* ~~UTF8-trupulleikar. Eri ikki vísur í, hvar trupulleikin liggur. Mítt besta boð er lesingin av fílunum.~~ [23-02-2017]
 
 Óivað er annað, ið eisini kann gerast betur.
