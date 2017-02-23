@@ -11,34 +11,17 @@ At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og
 3. [Veikleikar og betringar](https://github.com/signarit/adressur#veikleikar-og-betringar)
 
 ##Uppsetan
-* Byrja við at gera tær ein MySQL-databasa. Eg havi brúkt navnið *addresses*, men tú kanst velja, hvussu databasin skal eita. Minst bara til at skriva rætta databasunavnið, tá tú bindur í databasuservaran. Eitt SQL-script til uppsetan av tabellunum er í rótini og fílurin eitur [sql.sql](https://github.com/signarit/adressur/blob/master/sql.sql)
+* Hav ein MySQL-servara tilreiðar.
 
-* Rætta linjurnar \#63-67 í [server.js](https://github.com/signarit/adressur/blob/master/server.js) og áset adressuna til databasuservaran, brúkaranavn, loyniorð og navn á databasuni, sum tú júst hevur stovnað. Soleiðis síggja linjurnar út:
-```
-var mysql = mysql.createConnection({
-	host: 'localhost',
-	user: 'username',
-	password: 'password',
-	database: 'addresses',
-	charset: 'utf8mb4'
-});
-```
-* Tryggja tær, at tú ert í røttu mappuni og skriva ```npm install``` fyri at installera allar dependencies
+* Rætta linjurnar í [config.js](https://github.com/signarit/adressur/blob/master/config.js).
 
-* Tryggja tær, at tú ert í røttu mappuni og skriva ```node server.js``` fyri at tendra servaran
+* Skriva ```npm run migrate``` fyri at stovna databasa og neyðugar tabellur. Databasin fær navnið _addresses_.
 
-* Far inn á [http://localhost:3000/admin](http://localhost:3000/admin) og uploada fílarnar, ið liggja í [public/upload](https://github.com/signarit/adressur/tree/master/public/upload). Fílarnir eru hesir:
+* Skriva ```npm run seed``` fyri at stovna postnummur, kommunur, vegir og bústaðir í databasanum.
 
-| Fílnavn | Frágreiðing | Leinkja |
---- | --- | ---
-adr.txt | Hevur allar bústaðir í Føroyum | [adr.txt] (https://github.com/signarit/adressur/blob/master/public/upload/adr.txt)
-kommunur.txt | Hevur allar kommunur í Føroyum | [kommunur.txt] (https://github.com/signarit/adressur/blob/master/public/upload/kommunur.txt)
-postnr.txt | Hevur øll postnummur í Føroyum | [postnr.txt] (https://github.com/signarit/adressur/blob/master/public/upload/postnr.txt)
-veg.txt | Hevur allar vegir í Føroyum | [veg.txt] (https://github.com/signarit/adressur/blob/master/public/upload/veg.txt)
+* Skriva ```node server``` fyri at tendra servaran.
 
-* Tá fílarnir verða uploadaðir, fáa teir nýtt navn, sum hevur formin YYYY_MM_DD_\<fílnavn\>. Hetta er tí, at tað altíð skal vera møguligt at síggja gomlu fílarnar og sortera teir eftir dagfesting. Fílarnir verða lagdir í public/upload. Tá ein fílur verður uploadaður, verður hann lisin og goymdur í databasanum.
-
-* Nú kanst tú t.d. vitja [http://localhost:3000/kommunur](http://localhost:3000/kommunur)
+* Nú er klárt at vitja [http://localhost:3000/kommunur](http://localhost:3000/kommunur). Aðrir endaknútar síggjast niðanfyri.
 
 ##Endaknútar (endpoints)
 ###Umsiting

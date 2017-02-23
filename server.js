@@ -1,3 +1,4 @@
+var config = require('./config');
 var app = require('express')();
 var mysql = require('mysql');
 var multer = require('multer');
@@ -60,11 +61,11 @@ var accept_files = upload.fields([
  *
  ********************************/
 var mysql = mysql.createConnection({
-	host: 'localhost',
-	user: 'username',
-	password: 'password',
-	database: 'addresses',
-	charset: 'utf8mb4'
+	host: config.db.host,
+	user: config.db.username,
+	password: config.db.password,
+	database: config.db.database,
+	charset: config.db.charset
 });
 
 mysql.connect();
@@ -476,6 +477,6 @@ app.get('/vegur/:id/bustadir', function(req, res) {
  *
  ********************************/
 
-app.listen(3000, function() {
+app.listen(config.server.port, function() {
 	console.log('Listening on port 3000...');
 });
