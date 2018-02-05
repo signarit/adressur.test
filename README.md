@@ -1,7 +1,7 @@
 # Endamál
 At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og bústadir í Føroyum í JSON
 
-#Innihaldsyvirlit
+# Innihaldsyvirlit
 1. [Uppsetan](https://github.com/signarit/adressur#uppsetan)
 2. [Endaknútar](https://github.com/signarit/adressur#endaknútar-endpoints)
   * [Umsiting](https://github.com/signarit/adressur#umsiting)
@@ -10,7 +10,7 @@ At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og
   * [Vegir](https://github.com/signarit/adressur#vegir)
 3. [Veikleikar og betringar](https://github.com/signarit/adressur#veikleikar-og-betringar)
 
-##Uppsetan
+## Uppsetan
 * Hav ein MySQL-servara tilreiðar.
 
 * Byrja við at skriva ```npm install``` fyri at installera allar dependencies.
@@ -27,8 +27,8 @@ At gera ein Node API servara, ið veitir yvirlit yvir kommunur, vegir, bygdir og
 
 * Nú er klárt at vitja [http://localhost:3000/kommunur](http://localhost:3000/kommunur). Aðrir endaknútar síggjast niðanfyri.
 
-##Endaknútar (endpoints)
-###Umsiting
+## Endaknútar (endpoints)
+### Umsiting
 Endaknútar viðvíkjandi umsiting av bústøðum
 
 | Lýsing | Háttur | Endaknútur
@@ -36,7 +36,7 @@ Endaknútar viðvíkjandi umsiting av bústøðum
 | Umsiting av síðuni | GET | /admin
 | Uploading av fílum | POST | /upload
 
-###Kommunur
+### Kommunur
 Endaknútar viðvíkjandi kommunum
 
 | Lýsing | Háttur | Endaknútur
@@ -58,7 +58,7 @@ Dømi: ```http://localhost:3000/kommuna/5```. Úrslit:
 ]
 ```
 
-###Postnummur
+### Postnummur
 Endaknútar viðvíkjandi postnummurum
 
 | Lýsing | Háttur | Endaknútur
@@ -112,7 +112,7 @@ Dømi: ```http://localhost:3000/postnummar/796/vegir```. Úrslit:
 ]
 ```
 
-###Bygdir
+### Bygdir
 Endaknútar viðvíkjandi bygdum
 
 | Lýsing | Háttur | Endaknútur
@@ -135,7 +135,7 @@ Dømi: ```http://localhost:3000/bygd/96```. Úrslit:
 ]
 ```
 
-###Vegir
+### Vegir
 Endaknútar viðvíkjandi vegum
 
 | Lýsing | Háttur | Endaknútur
@@ -159,7 +159,7 @@ Dømi: ```http://localhost:3000/vegur/2```. Úrslit:
 ]
 ```
 
-##Veikleikar og betringar
+## Veikleikar og betringar
 Hesir veikleikarnir eru staðfestir og hesar betringarnar kunnu gerast
 
 * Betra um umsitingarliga partin við til dømis login. Øll hava rættindi at uploada fílar.
