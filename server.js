@@ -33,6 +33,8 @@ function set_path_to_public(req, res, next) {
 }
 
 function log_request(req, res, next) {
+	if (req.path == '/favicon.ico') { return; }
+	
 	var values = {
 		path: req.path,
 		ip: (req.ip.substr(0, 7) == '::ffff:') ? req.ip.substr(7, req.ip.length) : req.ip, 		// Remove ::ffff: from the IP-string
