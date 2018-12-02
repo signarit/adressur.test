@@ -33,7 +33,7 @@ function set_path_to_public(req, res, next) {
 }
 
 function log_request(req, res, next) {
-	if (req.path == '/favicon.ico') { return; }
+	if (req.path == '/favicon.ico') { next(); }
 	
 	var values = {
 		path: req.path,
