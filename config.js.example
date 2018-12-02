@@ -1,8 +1,9 @@
 module.exports = {
 	'db': {
 		'host': 'localhost',
-		'username': 'username',
-		'password': 'password',
+        'port': 3306,
+		'username': 'db_username',
+		'password': 'db_secret',
 		'database': 'addresses',
 		'charset': 'utf8mb4'
 	},
