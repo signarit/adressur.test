@@ -1,7 +1,20 @@
 var config = require('./config');
 var express = require('express');
+var session = require('express-session');
+var bcrypt = require('bcrypt');
 var app = express();
 var mysql = require('mysql');
+var bodyparser = require('body-parser');
+var cookieparser = require('cookie-parser');
+
+
+app.use(bodyparser.urlencoded({ extended: false }));
+app.use(cookieparser());
+app.use(session({
+	secret: config.server.session_secret,
+	resave: true,
+	saveUninitialized: false
+}));
 
 /********************************
  *

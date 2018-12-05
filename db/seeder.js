@@ -30,6 +30,22 @@ function read_file(path_to_file) {
 	});
 }
 
+var seed_users = new Promise(function(resolve, reject) {
+	var users = config.users;
+
+	users.forEach(function(user, index) {
+		var data = {
+			name: user.name,
+			email: user.email,
+			password: user.password
+		}
+
+		mysql.query('INSERT INTO users SET ?', data, function(error, rows, fields) {
+			if (error) console.log(error.message);
+		});
+	});
+});
+
 var seed_zip_codes = new Promise(function(resolve, reject) {
 	var line_reader = read_file(path_to_zip_codes);
 
@@ -204,6 +220,7 @@ var seed_addresses = new Promise(function(resolve, reject) {
 });
 
 Promise.all([
+	seed_users,
 	seed_zip_codes,
 	seed_municipalities,
 	seed_addresses,

@@ -2,6 +2,8 @@ var config = require('./config');
 var multer = require('multer');
 var fs = require('fs');
 var readline = require('readline');
+var bcrypt = require('bcrypt');
+
 
 /********************************
  *
@@ -62,11 +64,62 @@ module.exports = function(app, mysql) {
 		res.send('Hello World!');
 	});
 
+	app.get('/login', function(req, res) {
+		if (req.session.logged_in) {
+			res.redirect('/admin');
+		}
+
+		res.sendFile2('login.html');
+	});
+
+	app.post('/login', function(req, res) {
+		var email = req.body.email;
+		var password = req.body.password;
+
+		mysql.query("SELECT * FROM users WHERE email = '"+ email +"'", function(err, results, fields) {
+			if (err) res.json(err);
+
+			if (results.length > 0) {
+				bcrypt.compare(password, results[0].password, function(err, result) {
+					if (err) { res.redirect('/logout'); }
+					
+					if (! result) {
+						res.redirect('/login');
+					} else {
+						req.session.logged_in = true;
+						req.session.name = results[0].name;
+						req.session.email = results[0].email;
+						
+						res.redirect('/admin');
+					}
+				});
+			} else {
+				res.sendFile2('login.html');
+			}
+		});
+	});
+
+	app.get('/logout', function(req, res) {
+		req.session.destroy(function(err) {
+			if (err) { console.log(err); }
+
+			res.redirect('/login');
+		});
+	});
+
 	app.get('/admin', function(req, res) {
-		res.sendFile2('admin.html');
+		if (req.session.logged_in) {
+			res.sendFile2('admin.html');
+		} else {
+			res.redirect('/login');
+		}
 	});
 
 	app.post('/upload', accept_files, function(req, res) {
+		if (! req.session.logged_in) {
+			res.redirect('/login');
+		}
+
 		// Container to potentially send back to the client to inform
 		// of which files were successfully uploaded
 		var files_uploaded = [];

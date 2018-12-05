@@ -40,6 +40,28 @@ var change_database = new Promise(function(resolve, reject) {
 
 /********************************
  *
+ * Migrate table for users
+ *
+ ********************************/
+var migrate_users = new Promise(function(resolve, reject) {
+	mysql.query(
+		'CREATE TABLE IF NOT EXISTS users ( '+
+		'	id INT NOT NULL AUTO_INCREMENT, '+
+		'	name VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL, '+
+		'	email VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL, '+
+		'	password VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL, '+
+		'	PRIMARY KEY(id) '+
+		');', 
+		function(err, results, fields) {
+			if (err) reject(err.message);
+
+			resolve('Users migrated');
+		}
+	);
+});
+
+/********************************
+ *
  * Migrate table for zip codes
  *
  ********************************/
@@ -167,6 +189,7 @@ create_database.then(function(response) {
 
 		// Then we fire all of our migrations
 		Promise.all([
+			migrate_users,
 			migrate_zip_codes,
 			migrate_municipalities,
 			migrate_addresses,
