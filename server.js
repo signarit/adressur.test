@@ -6,8 +6,9 @@ var app = express();
 var mysql = require('mysql');
 var bodyparser = require('body-parser');
 var cookieparser = require('cookie-parser');
+var cors = require('cors');
 
-
+app.use(cors());
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(cookieparser());
 app.use(session({
